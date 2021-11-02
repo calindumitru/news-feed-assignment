@@ -1,0 +1,2 @@
+rss-app:
+  feed-url: "http://feeds.nos.nl/nosjournaal?format=xml"
