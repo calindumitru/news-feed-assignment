@@ -1,2 +1,12 @@
 rss-app:
   feed-url: "http://feeds.nos.nl/nosjournaal?format=xml"
+
+graphql:
+  servlet:
+    websocket:
+      enabled: false
+
+  playground:
+    enabled: true
+    cdn:
+      enabled: true

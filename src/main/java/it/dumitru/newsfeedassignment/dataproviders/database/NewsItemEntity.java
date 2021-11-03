@@ -12,16 +12,17 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@ToString(exclude = "description")
+@ToString(exclude = "description")//todo remove
 public class NewsItemEntity {
 
     @Id
+    @Column(nullable = false)
     private String guid;
-    @Column
+    @Column(nullable = false)
     private String title;
-    @Column(length = 5000)
+    @Column(length = 10000)
     private String description;
-    @Column
+    @Column(nullable = false)
     private ZonedDateTime publicationDate;
     @Column
     private String image;

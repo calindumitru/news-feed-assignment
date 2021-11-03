@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface GetAllNewsItems {
 
-    List<NewsItem> getAllNewsItems();
+    List<NewsItem> getAllNewsItems(final int page, final int size);
 }

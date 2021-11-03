@@ -12,7 +12,7 @@ public class RetrieveAllNewsUseCase {
 
     private final GetAllNewsItems getAllNewsItems;
 
-    public List<NewsItem> retrieveAll() {
-        return getAllNewsItems.getAllNewsItems();
+    public List<NewsItem> retrieve(final int page, final int size) {
+        return getAllNewsItems.getAllNewsItems(page, size);
     }
 }

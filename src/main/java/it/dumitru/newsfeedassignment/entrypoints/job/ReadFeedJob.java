@@ -16,7 +16,7 @@ public class ReadFeedJob {
     private final FeedProperties feedProperties;
     private final RefreshNewsItemsUseCase refreshNewsItemsUseCase;
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 5000) //fixme set to 5 minutes or configurable
     public void triggerUpdateFromFeed() {
         refreshNewsItemsUseCase.refresh(feedProperties.getFeedUrl());
     }
