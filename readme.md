@@ -21,12 +21,16 @@ Preferably the source code is shared using an online repository such as github o
    1. `dataproviders.database` Contains the database entity and repository.
    2. `dataproviders.rest` Contains the data provider for the rss feed.
 
-## Running the application
+## How to run the application
 
 First, import the project in your IDE.
 
 Run the `main` function contained in the `NewsFeedAssignmentApplication.java` file.
+Once the application is running, access the playground via the `http://localhost:8080/playground` URL.
 
-## Running the tests
+Optionally, a different news feed can be configured in the application.yml file.
 
-To run the automated tests, run all JUnit tests found under `src/test/java` in your IDE, or from maven with maven test.
+## How to run the tests
+
+* Option 1: run all JUnit tests found under `src/test/java` in your IDE.
+* Option 2: run the Maven test build lifecycle action by launching the `mvn test` command.
