@@ -12,7 +12,7 @@ Preferably the source code is shared using an online repository such as github o
 
 # Implementation
 
-##Structure
+## Structure
 
 1. `configuration` Contains Jackson object mapper configuration and the configuration property for the feed URL.
 2. `core` Contains the business logic and domain entities and the two use cases used to store and retrieve the stored data.
