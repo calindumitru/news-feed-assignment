@@ -13,15 +13,15 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class FeedDeserializer {
 
-    @Qualifier("feedObjectMapper")
-    private final ObjectMapper objectMapper;
+  @Qualifier("feedObjectMapper")
+  private final ObjectMapper objectMapper;
 
-    @SneakyThrows
-    public FeedDTO deserialize(final String xmlString) {
-        JSONObject jsonObject = XML.toJSONObject(xmlString);
-        JSONObject rssContents = jsonObject.getJSONObject("rss");
-        JSONObject channelContents = rssContents.getJSONObject("channel");
-        return objectMapper.readValue(channelContents.toString(), FeedDTO.class);
-    }
+  @SneakyThrows
+  public FeedDTO deserialize(final String xmlString) {
+    JSONObject jsonObject = XML.toJSONObject(xmlString);
+    JSONObject rssContents = jsonObject.getJSONObject("rss");
+    JSONObject channelContents = rssContents.getJSONObject("channel");
+    return objectMapper.readValue(channelContents.toString(), FeedDTO.class);
+  }
 
 }

@@ -10,9 +10,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class RetrieveAllNewsUseCase {
 
-    private final GetAllNewsItems getAllNewsItems;
+    private final RetrieveStoredNewsItems retrieveStoredNewsItems;
 
     public List<NewsItem> retrieve(final int page, final int size) {
-        return getAllNewsItems.getAllNewsItems(page, size);
+        return retrieveStoredNewsItems.getNewsItems(page, size);
     }
 }

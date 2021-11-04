@@ -1,5 +1,8 @@
 rss-app:
   feed-url: "http://feeds.nos.nl/nosjournaal?format=xml"
+  expectedDateFormat: "EEE, dd MMM yyyy HH:mm:ss Z"
+#  feed-url: "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en"
+#  expectedDateFormat: "EEE, dd MMM yyyy HH:mm:ss zzz"
 
 graphql:
   servlet:

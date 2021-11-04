@@ -8,6 +8,5 @@ type NewsItem {
 }
 type Query {
     # Retrieve latest news items by publication date
-    latestNewsItems(page: Int, size: Int): [NewsItem] #fixme add total number for paging
-#    newsItemsByDate(page: Int, size: Int, date: String): [NewsItem]
+    latestNewsItems(page: Int, size: Int): [NewsItem]
 }

@@ -4,7 +4,7 @@ import it.dumitru.newsfeedassignment.core.entity.NewsItem;
 
 import java.util.List;
 
-public interface GetAllNewsItems {
+public interface RetrieveStoredNewsItems {
 
-    List<NewsItem> getAllNewsItems(final int page, final int size);
+    List<NewsItem> getNewsItems(final int page, final int size);
 }

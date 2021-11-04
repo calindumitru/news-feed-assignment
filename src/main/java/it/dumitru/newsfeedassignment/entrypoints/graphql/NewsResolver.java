@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 @Service
 @RequiredArgsConstructor
 public class NewsResolver implements GraphQLQueryResolver {

@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class NewsItemGuidDTO {
-    private boolean isPermaLink;
-    private String content;
+  private boolean isPermaLink;
+  private String content;
 }

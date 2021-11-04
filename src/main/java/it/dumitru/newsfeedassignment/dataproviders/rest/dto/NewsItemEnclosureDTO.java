@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class NewsItemEnclosureDTO {
-    private String type;
-    private String url;
+  private String type;
+  private String url;
 }

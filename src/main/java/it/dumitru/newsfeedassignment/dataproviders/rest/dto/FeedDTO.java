@@ -8,12 +8,12 @@ import java.util.List;
 
 @Data
 public class FeedDTO {
-    private String title;
-    private String link;
-    private String description;
-    private String language;
-    private String pubDate;
-    private String webMaster;
-    @JsonProperty("item")
-    private List<NewsItemDTO> newsItems;
+  private String title;
+  private String link;
+  private String description;
+  private String language;
+  private String pubDate;
+  private String webMaster;
+  @JsonProperty("item")
+  private List<NewsItemDTO> newsItems;
 }

@@ -7,6 +7,7 @@ import it.dumitru.newsfeedassignment.dataproviders.rest.dto.NewsItemGuidDTO;
 import lombok.SneakyThrows;
 import lombok.val;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,7 +23,8 @@ class FeedDeserializerTest {
     private FeedDeserializer feedDeserializer;
 
     @SneakyThrows
-    @Test //todo better explain stuff here
+    @Test
+    @DisplayName("Given xml contents representing a valid rss feed with 2 items, when deserializing, DTOs contain expected data")
     void deserialize() {
         val xmlTestResource = Paths.get("src/test/resources", "rssFeed.xml");
         String xmlContents = Files.readString(xmlTestResource);

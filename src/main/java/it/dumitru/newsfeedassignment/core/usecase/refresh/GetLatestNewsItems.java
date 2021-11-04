@@ -1,4 +1,4 @@
-package it.dumitru.newsfeedassignment.dataproviders;
+package it.dumitru.newsfeedassignment.core.usecase.refresh;
 
 import it.dumitru.newsfeedassignment.core.entity.NewsItem;
 
@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface GetLatestNewsItems {
 
-    List<NewsItem> getNewsItems(final String url);
+    List<NewsItem> getNewsItemsFromRssFeed(final String url);
 }

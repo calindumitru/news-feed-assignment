@@ -11,12 +11,13 @@ import java.time.ZonedDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-@ToString(exclude = "description")//todo remove
+@Getter
+@Setter
+@ToString
 public class NewsItemEntity {
 
     @Id
-    @Column(nullable = false)
+    @Column(nullable = false, length = 500)
     private String guid;
     @Column(nullable = false)
     private String title;
@@ -26,6 +27,6 @@ public class NewsItemEntity {
     private ZonedDateTime publicationDate;
     @Column
     private String image;
-    @Column
+    @Column(length = 1000)
     private String link;
 }

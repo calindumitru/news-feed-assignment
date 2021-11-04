@@ -1,0 +1,9 @@
+query {
+    latestNewsItems(page:0, size:1) {
+        guid,
+        title,
+        description
+        image
+        link
+    }
+}
